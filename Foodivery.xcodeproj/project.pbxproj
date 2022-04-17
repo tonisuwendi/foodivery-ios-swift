@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		03C3A9E6280B56270073D27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3A9E5280B56270073D27D /* AppDelegate.swift */; };
 		03C3A9E8280B56270073D27D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3A9E7280B56270073D27D /* SceneDelegate.swift */; };
-		03C3A9EA280B56270073D27D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3A9E9280B56270073D27D /* ViewController.swift */; };
+		03C3A9EA280B56270073D27D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3A9E9280B56270073D27D /* WelcomeViewController.swift */; };
 		03C3A9ED280B56270073D27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C3A9EB280B56270073D27D /* Main.storyboard */; };
 		03C3A9EF280B56290073D27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C3A9EE280B56290073D27D /* Assets.xcassets */; };
 		03C3A9F2280B56290073D27D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C3A9F0280B56290073D27D /* LaunchScreen.storyboard */; };
+		03C3A9FF280B577C0073D27D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3A9FE280B577C0073D27D /* Constants.swift */; };
+		03C3AA04280BCBC80073D27D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3AA03280BCBC80073D27D /* SignInViewController.swift */; };
+		03C3AA07280BDE8B0073D27D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3AA06280BDE8B0073D27D /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03C3A9E2280B56270073D27D /* Foodivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C3A9E5280B56270073D27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03C3A9E7280B56270073D27D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03C3A9E9280B56270073D27D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03C3A9E9280B56270073D27D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		03C3A9EC280B56270073D27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03C3A9EE280B56290073D27D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03C3A9F1280B56290073D27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03C3A9F3280B56290073D27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03C3A9FE280B577C0073D27D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		03C3AA03280BCBC80073D27D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		03C3AA06280BDE8B0073D27D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,48 @@
 			children = (
 				03C3A9E5280B56270073D27D /* AppDelegate.swift */,
 				03C3A9E7280B56270073D27D /* SceneDelegate.swift */,
-				03C3A9E9280B56270073D27D /* ViewController.swift */,
-				03C3A9EB280B56270073D27D /* Main.storyboard */,
-				03C3A9EE280B56290073D27D /* Assets.xcassets */,
-				03C3A9F0280B56290073D27D /* LaunchScreen.storyboard */,
+				03C3A9FD280B575C0073D27D /* Models */,
+				03C3A9FA280B57410073D27D /* Views */,
+				03C3A9FC280B57540073D27D /* Controllers */,
+				03C3A9FB280B57480073D27D /* Supporting Files */,
 				03C3A9F3280B56290073D27D /* Info.plist */,
 			);
 			path = Foodivery;
+			sourceTree = "<group>";
+		};
+		03C3A9FA280B57410073D27D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03C3A9EB280B56270073D27D /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03C3A9FB280B57480073D27D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03C3A9EE280B56290073D27D /* Assets.xcassets */,
+				03C3A9F0280B56290073D27D /* LaunchScreen.storyboard */,
+				03C3A9FE280B577C0073D27D /* Constants.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03C3A9FC280B57540073D27D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				03C3A9E9280B56270073D27D /* WelcomeViewController.swift */,
+				03C3AA03280BCBC80073D27D /* SignInViewController.swift */,
+				03C3AA06280BDE8B0073D27D /* SignUpViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		03C3A9FD280B575C0073D27D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C3A9EA280B56270073D27D /* ViewController.swift in Sources */,
+				03C3AA07280BDE8B0073D27D /* SignUpViewController.swift in Sources */,
+				03C3A9EA280B56270073D27D /* WelcomeViewController.swift in Sources */,
 				03C3A9E6280B56270073D27D /* AppDelegate.swift in Sources */,
 				03C3A9E8280B56270073D27D /* SceneDelegate.swift in Sources */,
+				03C3AA04280BCBC80073D27D /* SignInViewController.swift in Sources */,
+				03C3A9FF280B577C0073D27D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
